@@ -1,0 +1,177 @@
+@font-face {
+    font-family: monteserrat;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: monteserratbold;
+    src: url(../fonts/Montserrat-Bold.otf);
+}
+
+/* Ask/Google about anchor tags, I have no idea what they are. */
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.slider{
+    min-height: 700px;
+    background-color: cadetblue;
+    background-image: url(../images/main-bg.jpg);
+}
+
+header{
+    min-height: 100px; 
+}
+
+.container{
+    width: 970px;
+    min-height: 10px;
+    margin: 0 auto;
+    
+}
+
+.logo{
+    height: 80px;
+    width: 200px;
+    float: left;
+}
+
+.logo img{
+    padding: 40px 0 0 0 ;
+} 
+
+.menu{
+    height:40px;
+    width: 50%;
+    float: right;
+    margin-top: 35px;
+    
+}
+
+.menu{
+    height: 40px; 
+  
+    width: 50%;
+    float: right; 
+    margin-top: 35px;
+}
+
+.menu ul li{
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+    margin-top: -5px;
+    
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Droid Serif', serif;
+}
+
+#slider-text1, #slider-text2{
+    text-align: center;
+    color: #fff;
+}
+
+#slider-text1{
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 50px;
+}
+
+#slider-text2{
+    font-family: Montserratbold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.yellow-button{
+    background-color: #fed136;
+    height: 65px;
+    color: #fff;
+    /* Do remember that display: block; is done to make the button to take shape. width is then used to define its horizontal borders */
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    /* text-align: center allows the text within the button to be aligned in the center */
+    text-align: center;
+    /* I really have no idea what the text decoration does in this case */
+    text-decoration: none;
+    /* Do trial and error to find out the size of the text that works */
+    font-size: 22px;
+    /* In case if you want to change the text to uppercase letters, use text-transform: uppercase; Since we have already used CAPS, we are not using it in this case. */
+    
+    /* At this point, the text within the button stays glued to the upper side of the button and can be brought in the center by 'padding' */
+    padding: 19px 0;
+    box-sizing: border-box
+}
+
+/* Jumping to the next section - SERVICES */
+
+.service{
+    min-height: 560px; 
+}
+
+.section-headline{
+    text-align: center;
+    color: #222;
+    font-family: monteserratbold;
+    text-transform: uppercase;
+    /*  */
+    padding: 0;
+    /* Note: the 'Services' word needs to have a larger spacing on the top to match the original layyout. */
+    padding-top: 65px;
+    
+}
+
+.sub-headline{
+    color: #777;
+    text-align: center;
+    font-family: 'Droid Serif', serif;
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Now we need a section for creating the three boxes under the services title. This will be container. */
+
+
+.container-box{
+    height: 300px;
+    width: 33.3%; /* Why are we using 33.3% ? */
+    float: left;
+    margin: 15px 0;
+}
+
+.service-element{
+    height: 260px;
+    width: 95%; 
+    margin: 15px auto;
+    
+}
+
+.services-element img{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.service-element h5{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #222;
+    
+}
+
+.service-element p{
+    text-align: center;
+    color: #999;
+}
